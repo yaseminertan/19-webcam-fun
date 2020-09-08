@@ -1,0 +1,13 @@
+{
+    "name":"webcam",
+    "version": "",
+    "description": "",
+    "scripts": {
+        "start": "browser-sync start --server --files '*.css,*.html,*.js'"
+    },
+    "author": "",
+    "license": "src",
+    "devDependencies": {
+        "browser-sync": "2.26.12"
+    }
+}
