@@ -7,11 +7,17 @@
 </head>
 <body>
     <div>
-        <canvas class="photo"></canvas>
-        <video class="player"></video>
-        <div class="strip"></div>
+        <input type="range" min="0" max="255">
+    </div>
+    <div>
+        <p>Photo</p>
+        <canvas class="photo" style="border:1px solid black"></canvas>
+        <p>Video</p>
+        <video class="player" style="border:1px solid black"></video>
+        <p>Strip</p>
+        <div class="strip" style="border:1px solid black"></div>
     </div>
     <audio class="snap" src="./snap.mp3" hidden></audio>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
