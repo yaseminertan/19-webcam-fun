@@ -12,6 +12,17 @@ navigator.mediaDevices.getUserMedia({video:true,audio:false})
     video.play();
 });
 
-canvas.width=video.videoWidth;
-canvas.height=video.videoHeight;
+//canvas.width=video.videoWidth;
+//canvas.height=video.videoHeight;
 setInterval(() => { ctx.drawImage(video,0,0,canvas.width,canvas.height); } , 16);
+ function takePhoto()
+ {
+    snap.currentTime=0;
+    snap.play();
+    const data=canvas.toDataURL('image/jpeg');
+    const link=document.getElementById('link');
+    //link.href=data;
+    link.setAttribute('download','pretty');
+    link.textContent='download image';
+    link.innerHTML=`<img src="${data}" />`;
+ }

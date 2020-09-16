@@ -10,12 +10,16 @@
         <input type="range" min="0" max="255">
     </div>
     <div>
-        <p>Photo</p>
+        <button onclick="takePhoto()" style="margin-bottom: 10px;">Take Photo</button>
+        <div class="strip">
+           <a id='link' ></a>
+        </div>
+        <br>
+        <p>Canvas</p>
         <canvas class="photo" style="border:1px solid black"></canvas>
         <p>Video</p>
         <video class="player" style="border:1px solid black"></video>
-        <p>Strip</p>
-        <div class="strip" style="border:1px solid black"></div>
+       
     </div>
     <audio class="snap" src="./snap.mp3" hidden></audio>
     <script src="script.js"></script>
